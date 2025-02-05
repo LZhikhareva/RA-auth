@@ -1,7 +1,7 @@
-export default function News(props) {
+export default function News({ news }) {
     return (
         <div className='news-list'>
-            {props.news.length > 0 && props.news.map(item => {
+            {news.length > 0 && news.map(item => {
                 return (
                     <div className='news-card' key={item.id}>
                         <img src={item.image} className='news-img' />
